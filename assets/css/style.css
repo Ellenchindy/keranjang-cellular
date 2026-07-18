@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    display:flex;
+}
+
+/* =====================
+   SIDEBAR
+===================== */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#1b1b1b;
+    position:fixed;
+    left:0;
+    top:0;
+    border-right:2px solid #2a2a2a;
+}
+
+.logo{
+    text-align:center;
+    padding:30px 20px;
+}
+
+.logo img{
+    width:80px;
+    margin:auto;
+}
+
+.logo h2{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:18px 25px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:16px;
+}
+
+.sidebar li i{
+    width:30px;
+}
+
+.sidebar li:hover{
+    background:#d50000;
+}
+
+.sidebar .active{
+    background:#d50000;
+}
+
+/* =====================
+   MAIN
+===================== */
+
+.main{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    min-height:100vh;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header{
+    background:#1b1b1b;
+    padding:20px 40px;
+    border-bottom:2px solid #2a2a2a;
+}
+
+header h1{
+    font-size:28px;
+}
+
+/* =====================
+   BANNER
+===================== */
+
+.banner{
+    margin:30px;
+    padding:45px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#b30000,#ff2b2b);
+}
+
+.banner h2{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.banner p{
+    font-size:18px;
+    opacity:.9;
+}
+
+/* =====================
+   MENU
+===================== */
+
+.menu{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:0 30px 30px;
+}
+
+.card{
+    background:#1c1c1c;
+    border-radius:18px;
+    padding:35px;
+    text-align:center;
+    transition:.3s;
+    border:1px solid #2a2a2a;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#252525;
+    border-color:#d50000;
+}
+
+.card i{
+    font-size:42px;
+    color:#ff2b2b;
+    margin-bottom:20px;
+}
+
+.card h3{
+    font-size:20px;
+}
